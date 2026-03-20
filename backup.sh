@@ -18,7 +18,7 @@ BACKUP_FILE="backup-$TIMESTAMP.sql"
 echo "Creating MySQL backup."
 
 docker exec $CONTAINER_NAME \
-  mysqldump -u $DB_USER -p$DB_PASSWORD $DB_NAME > $BACKUP_FILE
+  mysqldump -u $DB_USER -p"$DB_PASSWORD" $DB_NAME > $BACKUP_FILE
 
 # Upload backup to S3
 echo "Uploading backup to S3."
