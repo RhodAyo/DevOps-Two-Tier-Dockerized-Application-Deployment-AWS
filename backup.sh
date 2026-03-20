@@ -4,9 +4,9 @@
 set -e
 
 CONTAINER_NAME="wordpress-db"
-DB_NAME=wordpress
-DB_USER=wpuser
-DB_PASSWORD=wp_password
+DB_NAME=$DB_NAME
+DB_USER=$DB_USER
+DB_PASSWORD=$DB_PASSWORD
 S3_BUCKET="s3://wordpress-backup-ayomide-oluwole-2026"
 
 # Generate timestamp for backup file
